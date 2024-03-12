@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Function</title>
+</head>
+<body>
+    <script>
+
+        // (3) Generator Function
+            // yield
+            // next()
+            function* genfun(){
+                // yield 1;
+                yield 1;
+                yield 2;
+                yield 3;
+            }
+            // console.log(genfun());
+            // console.log(genfun().next());
+            // console.log(genfun().next().value); // 1
+            // console.log(genfun().next().value); // 1
+            // console.log(genfun().next().value); // 1
+
+            const getgenfun = genfun();
+            // console.log(getgenfun);
+            // console.log(getgenfun.next());
+            console.log(getgenfun.next().value); // 1
+            console.log(getgenfun.next().value); // 2
+            console.log(getgenfun.next().value); // 3
+            console.log(getgenfun.next().value); // undefined
+
+
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

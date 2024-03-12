@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+</head>
+
+<body>
+
+    <ul>
+        <li>Name : Aung Aung</li>
+        <li>Age : 25</li>
+        <li>Job : Web Developer</li>
+        <li>City : Yangon</li>
+    </ul>
+
+
+
+    <script type="text/javascript">
+
+        // var fullname; // oki = undefined
+        // let fullname; // oki = undefined
+        // const fullname; // error
+        // console.log(fullname);    
+
+        const name = "Honey Nway Oo";
+        const age = 23;
+        const job = "Model";
+        const city = "Yangon";
+
+        let myliststyle;
+        console.log(myliststyle); // undefined
+
+        myliststyle = "<h1>Hello World</h1>";
+        myliststyle = '<h1>Hello Global</h1>';
+        myliststyle = `<h1>Hello Human</h1>`;
+        console.log(myliststyle);
+        document.write(myliststyle);
+
+        // Without Template String (mean ==> ``)
+        myliststyle =   "<ul>"+
+                            "<li> Name : "+name+"</li>"+
+                            "<li>Age : "+age+"</li>"+
+                            "<li>Job : "+job+"</li>"+
+                            "<li>City : "+city+"</li>"+
+                        "</ul>";
+
+        console.log(myliststyle);
+        document.write(myliststyle);
+
+        // With Template String (mean ==> ``)
+        myliststyle =   `<ul>
+                            <li>Name : ${name}</li>
+                            <li>Age : ${age}</li>
+                            <li>Job : ${job}</li>
+                            <li>City : ${city}</li>
+                        </ul>`;
+
+        document.write(myliststyle);
+
+
+    </script>
+
+</body>
+
+</html>

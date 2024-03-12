@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LS Intro</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    
+    <p>Hay</p>
+
+    <script type="text/javascript">
+        console.log("Aung Aung");
+        console.log('Kyaw Kyaw');
+        console.log(`Su Su`);/* `` ==> backtick */
+        console.log(500);
+        console.log('600');
+        console.log("700");
+        console.log("Aung Aung","Zaw Zaw","Maung Maung");
+        console.log(100,200,300);
+        console.log("Aung Aung",500);
+        console.log(false);
+        // console.log('10'+'40');
+        console.log('20'+"50");
+
+        console.log(true+true);
+        console.log('true'+'true');
+        console.log(true+false);
+        console.log(true+50);
+        console.log(false+50);
+        console.log('true'+50);
+        console.log(false+50);
+        console.log('true'+20);
+        console.log(true+"Aung Aung");
+        console.log("Zaw Zaw"+false);
+
+        // Comments
+        // Single line Comment
+        // Multi Line Comment
+
+        window.alert("Warrning!!!!")
+        window.alert("F You!!!!")
+        alert("Are you ready to learn JS?")
+        
+        // Variable(var / let / const)
+            // var/let/const variablename = value
+
+        var fullname = "Myo Myo";
+        fullname = "Aung Aung";
+        console.log(fullname);
+        console.log(fullname);
+        // window.alert(fullname);
+
+        console.log("My friend name is "+ fullname);
+        console.log(`My friend name is ` + fullname);
+
+        // BAckticks (``)
+
+        var lady = "Honey Nway Oo";
+        console.log("We love Lady");// We love lady
+        console.log(`${lady}`);// Honey Nway Oo
+        console.log("We Love " + `${lady}`);// We love Honey Nway Oo
+
+        var num1 = 100;
+        const num2 = 200;
+        console.log(num1);
+        console.log(num2);
+        console.log(num1,num2);// 100 200
+
+        console.log(num1 + num2);// 300
+        console.log(`num1 + num2`);// num1 + num2
+        console.log(`${num1}+${num2}`);// 100 + 200
+        console.log(`${num1}`+`${num2}`);// 100200
+        console.log(`${num1+num2}`);// 300 but it's string not number
+
+        // Override or Overwrite
+
+        var num3 = 30;
+        var num4 = 40;
+        console.log("num3 value is = " + num3);// num3 value is 30
+        console.log("num4 value is = " + num4);// num3 value is 30
+        console.log(num3 + num4);// 70
+
+        num3 = 50;
+        console.log("num3 value is = " + num3);// 50
+        console.log(num3 + num4);
+
+        let num5 = 50;
+        console.log(num5);// 50
+
+        num5 = 500;
+        console.log(num5);// 500
+
+        const num6 = 60;
+        console.log(num6);// 60
+
+        // num6 = 600;
+        // console.log(num6);// Uncaught TypeError: Assignment to constant variable
+
+        // Special Escape Characters( \ )
+
+        console.log("Hay I'm working.Do you see now?");
+        console.log("Hay I'm 'working'.Do you see now?");
+        console.log('Hay I\'m "working".Do you see now?');
+        console.log('He is very tall,about 6ft 4"');
+
+        let x = 'He is U Ba. ';
+        let y = "He is my Uncle.";
+        console.log(`${x} ${y}`);// He is U Ba.He is my Uncle.
+
+        let name = "Aung Aung";
+        console.log(`${name}`);
+
+        document.write(`${x} ${y}`);// He is U Ba. He is my Uncle.
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
+
+<!-- Variable Name
+
+    we can use
+    letter,number,_,$
+
+    var firstname = "Tin Htut";         <- i recommend to use
+    var FirstName
+    var firat-name
+    var $firstname
+    var name1                           <- i recommend to use
+
+    We can't use
+    var first name
+    var first-name
+    var @firstname
+    var 2name
+
+    let ka naut ta khar kyar nyar lo ma ya bu,or error tat tal
+    var ka naut ta khar kyar nyar lo ya tal ,or error ma pya bu
+    const ka overwrite yay lo ma ya bu
+-->

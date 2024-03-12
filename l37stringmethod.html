@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+
+        let firstname = "Mya Hin";
+        let lastname = "Yee Lwin";
+
+        console.log(firstname); // Mya Hin
+        console.log(lastname); // Yee Lwin
+        console.log(firstname,lastname); // Mya Hin Yee Lwin
+
+        // Concat(+)
+        let fullname = firstname+" "+lastname; // Mya Hin Yin Lwin
+        console.log(fullname);
+
+        // ==>string.concat(string);
+        console.log(firstname.concat(lastname)); // Mya HinYin Lwin
+        console.log(lastname.concat(firstname)); // Yin LwinMya Hin
+
+        // Append( += )
+        let name1 = "Honey Nway";
+        let name2 = "Oo";
+
+        console.log(name1+name2); // Honey NwayOo
+        console.log(name1.concat(name2)); // Honey NwayOo
+
+        name1 += name2;
+        console.log(name1); // Honey NwayOo
+
+        let num1 = 10;
+        let num2 = 20;
+
+        // num1 = num2;
+        // console.log(num1); // 10
+
+        // num1 = num1 + num2;
+        // console.log(num1); // 30
+
+        num1 += num2;
+        console.log(num1); // 30
+
+
+        let myfriend = "Aung Ko Ko";
+
+        console.log(myfriend); // onsole.log(myfriend[0]);
+        console.log(typeof myfriend); // string
+        console.log(myfriend.length); // 10
+
+        console.log(myfriend[0]); // A
+        console.log(myfriend[3]); // g
+        console.log(myfriend[4]); // 
+        console.log(typeof myfriend[3]); // string
+        console.log(myfriend[myfriend.length-1]); // o
+
+        // charAt()
+        const nickname = "Aung Kyaw Kyaw";
+        console.log(nickname[5]); // K
+        console.log(nickname.charAt(5)); // K
+        console.log(nickname.charAt(nickname.length-1)); // w
+
+        // includes()
+        let favcolor = "My favourite color is black color";
+        console.log(favcolor.includes("black")); // true
+        console.log(favcolor.includes("red")); // false
+        console.log(favcolor.includes("Black")); // false
+        console.log(favcolor.includes("bla")); // true
+
+        // replace(old,new)
+        console.log(favcolor.replace("black","red")); // My favourite color is red color
+        console.log(favcolor.replace("Black","red")); // My favourite color is black color
+        console.log(favcolor.replace("BLACK","red")); // My favourite color is black color
+        console.log(favcolor.replace("bla","red")); // My favourite color is redck color
+
+
+        // substring(index,length)
+        console.log(favcolor.substring(0,10)+"..."); // My favouri...
+        console.log(favcolor.substring(0,10).concat('---------------------')); // My favouri---------------------
+
+        // Change Case
+        console.log(favcolor.toLocaleLowerCase()); // my favourite color is black color
+        console.log(favcolor.toLocaleUpperCase()); // MY FAVOURITE COLOR IS BLACK COLOR
+
+
+        // 
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
